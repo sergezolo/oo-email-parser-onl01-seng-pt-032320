@@ -13,7 +13,8 @@ class EmailAddressParser
     
   def parse
     emails.collect do |email|
-      email.split()
+      email.split(/[\s]+/)
+    end
   end
   
   
